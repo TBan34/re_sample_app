@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   get 'lists/new'
-  get 'lists' => 'lists#create'
-  get 'lists/index'
-  get 'lists/show'
-  get 'lists/edit'
-  get 'homes/top'
+  get 'top' => 'homes#top'
+  post 'lists' => 'lists#create'
+  get 'lists' => 'lists#index'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
